@@ -18,5 +18,4 @@ declare enum Role {
 }
 declare let userRole3: Role;
 declare let greetingMorning: unknown;
-declare function greeting(name: string, age: number): string;
 //# sourceMappingURL=index.d.ts.map
