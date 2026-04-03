@@ -52,3 +52,26 @@ class GoalKeeper extends FootballPlayer {
 
 const player1 = new GoalKeeper("Van Der Sar", 20000000, 10 )
 player1.salaryInfo()
+
+// getter dan setter
+class Product {
+    private _price: number = 0
+
+    get makePrice(): string{
+        return `Rp${this._price}`
+    }
+
+    set makePrice(newPrice: number) {
+        if (newPrice < 0) {
+            console.log("Harga tidak boleh dibawah 0");
+            return ;
+        }
+        this._price = newPrice
+    }
+}
+
+const TV1 = new Product()
+TV1.makePrice = 1000000
+TV1.makePrice = -1000000
+console.log(TV1.makePrice);
+
