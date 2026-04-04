@@ -1,4 +1,3 @@
-import { getPositionOfLineAndCharacter } from "typescript";
 
 class Laptop {
     merk: string;
