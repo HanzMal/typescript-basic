@@ -51,21 +51,21 @@ function padLeft(padding: number | string, input: string): string {
 }
 console.log(padLeft(10, "makan"));
 
-function printAll(strs: string | string[] | null) {
-  if (typeof strs === "object") {
-    for (const s of strs) {
-'strs' is possibly 'null'.
-      console.log(s);
-    }
-  } else if (typeof strs === "string") {
-    console.log(strs);
-  } else {
-    // do nothing
-  }
-}
-// const string1 = ["string", "string"]
-// printAll(string1)
-printAll("string")
+// function printAll(strs: string | string[] | null) {
+//   if (typeof strs === "object") {
+//     for (const s of strs) {
+// 'strs' is possibly 'null'.
+//       console.log(s);
+//     }
+//   } else if (typeof strs === "string") {
+//     console.log(strs);
+//   } else {
+//     // do nothing
+//   }
+// }
+// // const string1 = ["string", "string"]
+// // printAll(string1)
+// printAll("string")
 
 // Menangani library eksternal tanpa tipe
 // 1. cari definitely typed

@@ -2,10 +2,18 @@ function getFirstItem<T>(items:T[]) {
     return items[0]
 }
 
+function getRandomItem<T>(items: T[]) {
+    const randomIndex = Math.floor(Math.random() * items.length)
+    return items[randomIndex]
+}
+
 // pakai di dua tipe data yang berbeda
 const listNumbers = [1,940,865]
 const firstListNumbers = getFirstItem<number>(listNumbers)
 console.log("firstListNumbers", firstListNumbers);
+
+const randomIndexNumbers = getRandomItem<number>(listNumbers)
+console.log("randomIndexNumbers", randomIndexNumbers);
 
 const listMonth = ["January", "February", "March"]
 const firstListMonth = getFirstItem<string>(listMonth)
@@ -100,3 +108,17 @@ async function getProfile() {
   console.log(user); // Type-safe!
 }
 getProfile()
+
+// keyof mengambil value dari object dengan kunci yang valid
+function getPropertyValue<T, K extends keyof T>(obj: T, key: K) {
+    return obj[key]
+}
+
+const user1: User = { 
+    id: 12345678,
+    username: "user1jo"
+}
+
+const getPropertyValue1 = getPropertyValue(user1, "username")
+console.log("getPropertyValue1 value", getPropertyValue1);
+console.log("getPropertyValue1 type", typeof getPropertyValue1);

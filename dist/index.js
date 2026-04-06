@@ -1,3 +1,4 @@
+"use strict";
 let username = "Hanz";
 let age = 29;
 let username1 = "Paijo";
@@ -34,5 +35,4 @@ function greeting(name, age) {
 }
 console.log(greeting(username, age));
 console.log(greeting(username1, age1));
-export {};
 //# sourceMappingURL=index.js.map
