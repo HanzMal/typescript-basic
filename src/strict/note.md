@@ -33,4 +33,8 @@ Kita harus tahu kapan menulis tipe data secara eksplisit dan kapan percaya kepad
  - transformasi type = conditional types, mapped types, template literal types
  - data yang bersifat immutable
 
-
+<!-- Narrowing -->
+Tipe narrowing = mempersempit kemungkinan misal ada yang string | number, nah tugasnya narrwoing itu memilih tipe data yang akan digunakan di dalam suatu blok kode tertentu.
+ - Type Guards (operator typeof dan instanceof)
+ - User-defined type guards = fungsi kustom untuk validasi tipe
+ - 

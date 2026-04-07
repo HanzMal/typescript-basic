@@ -84,6 +84,19 @@ class DataPlayer<T> {
     }
 }
 
+interface DataPlayerLegend {
+    name: string
+    position: string
+    numberShirt: number
+}
+
+const allLegend = new DataPlayer<DataPlayerLegend>()
+allLegend.addItem({name: "Mohammed Salah", position: "RWF", numberShirt: 11},)
+allLegend.addItem({name: "Lionel Messi", position: "AMF", numberShirt: 10},)
+console.log("Legend: ", allLegend.getItems());
+
+
+
 const LiverpoolLegend = new DataPlayer<string>()
 LiverpoolLegend.addItem("Robbie Fowler")
 LiverpoolLegend.addItem("Kuyt")

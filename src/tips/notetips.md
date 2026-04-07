@@ -5,3 +5,5 @@ Tips Typescript
     - Omit<Type, Keys> mengambil semua properti dan membuang yang tidak diperlukan
 
 2. Tipe narrowing = mempersempit kemungkinan misal ada yang string | number, nah tugasnya narrwoing itu memilih tipe data yang akan digunakan di dalam suatu blok kode tertentu.
+
+discriminated Union = penambahan properti literal yang unik pada setiap tipe dalam union yang berguna sebagai pembeda antar tipe
